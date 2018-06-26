@@ -1,0 +1,15 @@
+{
+  "id": "75b9cb9c-cec2-4f3c-90f7-74682297a1fd",
+  "label": "noflotest NoFlo runtime",
+  "secret": "pippoplutopaperino",
+  "permissions": {
+    "pippoplutopaperino": [
+      "protocol:component",
+      "protocol:runtime",
+      "protocol:graph",
+      "protocol:network",
+      "component:getsource",
+      "component:setsource"
+    ]
+  }
+}
