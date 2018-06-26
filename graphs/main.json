@@ -1,0 +1,57 @@
+{
+    "caseSensitive": false,
+    "properties": {
+        "name": "main",
+        "environment": {
+            "type": "noflo-nodejs"
+        }
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "RabbitConnect": {
+            "component": "noflotest/getone",
+            "metadata": {
+                "label": "RabbitConnect",
+                "x": 540,
+                "y": 180,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "amqp/Connect_yntmp": {
+            "component": "amqp/Connect",
+            "metadata": {
+                "label": "Connect",
+                "x": 432,
+                "y": 288,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Output_gagha": {
+            "component": "core/Output",
+            "metadata": {
+                "label": "Output",
+                "x": 720,
+                "y": 432,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "amqp/Connect_yntmp",
+                "port": "error"
+            },
+            "tgt": {
+                "process": "core/Output_gagha",
+                "port": "in"
+            },
+            "metadata": {}
+        }
+    ]
+}
